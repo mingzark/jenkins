@@ -1,6 +1,6 @@
 #!/bin/bash
 DATE=`date +%Y-%m-%d_%H-%M-%S`
-METHR=$1
+OPTION=$1
 GROUP_LIST=$2
 
 
@@ -119,7 +119,7 @@ function delete_history_version(){
   done
 }
 main(){
-   case ${METHR}  in
+   case ${OPTION}  in
       deploy)
         IP_List;        
         Code_Clone;
